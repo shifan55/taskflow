@@ -1,9 +1,9 @@
 # Task Priority Scorer
 
-def assign_priority(task):
-    if task["deadline"] == "today":
+def assign_priority(tasks):
+    if tasks["deadline"] == "today":
         return "High"
-    elif task["deadline"] == "this week":
+    elif tasks["deadline"] == "this week":
         return "Medium"
     else:
         return "Low"
